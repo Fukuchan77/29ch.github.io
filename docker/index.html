@@ -26,17 +26,54 @@
 </nav>
 <section>
 <article>
-  <span class="date">ここに日付</span>
-  <h2>ここにタイトル</h2>
+  <h2>イメージ確認</h2>
   <p>
-   ここにテキスト
+   docker images
   </p>
-  <a href="#" class="btn">&gt;もっと見る</a>
+</article>
+<article>
+  <h2>コンテナ確認</h2>
+  <p>
+   docker ps
+   
+   # 停止中も含めて確認
+   docker ps -a
+  </p>
+</article>
+<article>
+  <h2>コンテナ全停止</h2>
+  <p>
+   docker stop $(docker ps -aq)
+   
+   # 停止中も含めて確認
+   docker rm $(docker ps -aq)
+  </p>
+</article>
+<article>
+  <h2>コンテナ全削除</h2>
+  <p>
+   docker rm $(docker ps -aq)
+  </p>
+</article>
+<article>
+  <h2>イメージ全削除</h2>
+  <p>
+   docker rmi $(docker images -q)
+  </p>
+</article>
+<article>
+  <h2>全削除</h2>
+  <p>
+   docker system prune
+  </p>
+  <p>
+    $ docker <Management Command> prune
+        <Management Command> は、container, image, network, volumeなど
+  </p>
 </article>
 </section>
 
-  <a href="https://ja.wikipedia.org/wiki/Kubernetes" class="btn">&gt; Wikipedia </a>
-  <a href="https://github.com/kubernetes/kubernetes" class="btn">&gt; GitHub </a>
+  <a href="#" class="btn">&gt;もっと見る</a>
 
 <footer>
 <address>Copyright(C)2020 29ch, Allright Reserved.</address>
