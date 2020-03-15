@@ -43,7 +43,7 @@ OR
 
 (MacOS/LINUX)
 
-    _ENV_/bin/activate
+    source _ENV_/bin/activate
 
 or
 
