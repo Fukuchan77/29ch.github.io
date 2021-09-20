@@ -28,6 +28,9 @@ def read_root():
 uvicorn main:app --reload
 ```
 
+Check it:
+  http://127.0.0.1:8000/
+
 Interactive API docs (provided by Swagger UI):
   [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
