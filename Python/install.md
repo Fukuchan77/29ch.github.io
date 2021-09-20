@@ -18,25 +18,6 @@ https://www.python.org/downloads/
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 --------
-
-## pyenvのインストール (MacOS)
-
-    git clone git://github.com/yyuu/pyenv.git ~/.pyenv
-
-OR
-
-    brew install pyenv
-
-#### ~./bash_profileの編集
-
-    export PYENV_ROOT=/usr/local/var/pyenv
-    PATH="$PYENV_ROOT/bin:$PATH"
-
-#### 自動補完機能
-
-    if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-
---------
 ## venv (Python Virtual Environments)
 
     python3 -m venv _ENV_
