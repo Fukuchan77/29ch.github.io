@@ -29,7 +29,8 @@ uvicorn main:app --reload
 ```
 
 Interactive API docs (provided by Swagger UI):
-  http://127.0.0.1:8000/docs
+  [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs){:target="_blank"}
 
 Alternative API docs (provided by ReDoc):
-  http://127.0.0.1:8000/redoc
+  [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc){:target="_blank"}
+
